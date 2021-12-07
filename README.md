@@ -10,10 +10,10 @@ npm install vueTree --save
 ```js
 import Vue from 'vue'
 // in ES6 modules
-import VueTree, { resetTree, updatePartTree }  from 'vueTree'
+import VueTree, { resetTree, updatePartTree }  from '../vueTree.umd.min.js'
 
 // in CommonJS
-const VueTree = require('vueTree')
+const VueTree = require('../vueTree.umd.min.js')
 
 export default {
   components: {
