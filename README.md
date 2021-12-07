@@ -4,16 +4,15 @@
 拉取项目后安装依赖并运行npm run serve;访问[http://localhost:8080/](http://localhost:8080/)即可
 ## 安装
 ```
-npm install vueTree --save
+下载对应的min.js文件
 ```
 ## 导入
 ```js
 import Vue from 'vue'
-// in ES6 modules
-import VueTree, { resetTree, updatePartTree }  from '../vueTree.umd.min.js'
 
-// in CommonJS
-const VueTree = require('../vueTree.umd.min.js')
+import VueTree, { resetTree, updatePartTree }  from '../vueTree.umd.min.js'
+//or
+const VueTree = require('../vueTree.common.js')
 
 export default {
   components: {
