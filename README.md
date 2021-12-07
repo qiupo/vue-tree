@@ -1,5 +1,7 @@
 # vueTree
 `vueTree` 是一个基于vue的可自定义的折线树图形图组件；
+### demo
+拉取项目后安装依赖并运行npm run serve;访问[http://localhost:8080/](http://localhost:8080/)即可
 ## 安装
 ```
 npm install vueTree --save
@@ -20,7 +22,7 @@ export default {
 }
 ```
 
-##方法
+## 方法
 `VueTree` 即为组件本身；
 当开发者自行定义的 `slot`节点发生变化时（例如位置、尺寸等发生改变），由开发者主动调用 `updatePartTree` 进行树状图结构的更新；
 如果因为特殊的操作需要重置整个树状图，则可以调用 `resetTree` 完成, `resetTree`接收一个 `VueTree`节点作为参数（可以通过 `$ref`获取）
