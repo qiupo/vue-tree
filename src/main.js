@@ -1,8 +1,6 @@
-import Vue from 'vue'
-import ChartTree from '../test/chart-tree.vue'
-
-Vue.config.productionTip = false
-
-new Vue({
-  render: h => h(ChartTree)
-}).$mount('#app')
+import VueTree from './vueTree.vue'
+export default VueTree
+export {
+  resetTree,
+  updatePartTree
+} from './util'

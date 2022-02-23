@@ -5,7 +5,7 @@
     ref="treeNodeRef"
     :data-opened="dataOpened.noOpened"
   >
-    <div :class="treeParentClassName">
+    <div :class="treeParentClassName" :id="treeNodeData.id"> 
       <div class="stretch_node_r" v-if="!isRoot">
         <p class="line_r"></p>
       </div>
@@ -112,7 +112,7 @@ export default {
     vertical-align: top;
     display: inline-block;
   }
-  @stretchLineW: 8px;
+  @stretchLineW: 24px;
   @stretchNodeH: 15px;
   .stretch_node_r {
     display: inline-block;
